@@ -1,0 +1,44 @@
+.stca-overlay[hidden] { display: none !important; }
+.stca-overlay {
+    position: fixed; inset: 0; z-index: 2147483000; display: grid; place-items: center;
+    padding: 16px; background: rgb(0 0 0 / 65%); color: var(--SmartThemeBodyColor, #eee);
+}
+.stca-panel {
+    width: min(960px, 100%); max-height: calc(100dvh - 32px); overflow: auto;
+    padding: 20px; border-radius: 12px; border: 1px solid var(--SmartThemeBorderColor, #666);
+    background: var(--SmartThemeBlurTintColor, #242424); box-shadow: 0 10px 40px rgb(0 0 0 / 40%);
+    text-align: left; overflow-wrap: anywhere;
+}
+.stca-panel header { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+.stca-panel header h2 { margin: 0; font-size: 1.25em; }
+.stca-panel small { font-size: .65em; opacity: .7; }
+.stca-panel p { margin: 10px 0; }
+.stca-panel h3 { margin: 18px 0 8px; }
+.stca-panel input, .stca-panel textarea {
+    box-sizing: border-box; color: inherit; font: inherit; border: 1px solid var(--SmartThemeBorderColor, #777);
+    background: var(--black30a, rgb(0 0 0 / 20%)); border-radius: 5px; padding: 8px;
+}
+.stca-panel textarea { width: 100%; resize: vertical; white-space: pre-wrap; min-height: 140px; }
+.stca-panel input { width: 100%; min-width: 0; }
+.stca-range { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)) auto; align-items: end; gap: 10px; }
+.stca-range label { display: flex; flex-direction: column; gap: 6px; }
+.stca-actions { display: flex; gap: 8px; flex-wrap: wrap; margin: 10px 0; }
+.stca-panel .menu_button { width: auto; height: auto; min-height: 36px; margin: 0; padding: 7px 12px; }
+.stca-panel button:disabled { opacity: .5; cursor: not-allowed; }
+.stca-panel details { margin: 12px 0; }
+.stca-panel summary { cursor: pointer; }
+.stca-panel pre { white-space: pre-wrap; font: inherit; line-height: 1.6; }
+.stca-hint { font-size: .88em; opacity: .85; line-height: 1.6; }
+.stca-status { padding: 10px; border-left: 3px solid #6cbfa4; white-space: pre-wrap; line-height: 1.6; }
+.stca-status.stca-error { border-color: #e49b6f; }
+.stca-card { margin: 10px 0; border: 1px solid var(--SmartThemeBorderColor, #666); border-radius: 8px; padding: 12px; }
+.stca-card p { white-space: pre-wrap; font-size: .9em; }
+.stca-panel footer { border-top: 1px solid var(--SmartThemeBorderColor, #666); margin-top: 20px; padding-top: 12px; }
+#stca-settings { padding: 10px 0; }
+#stca-menu { cursor: pointer; }
+@media (max-width: 600px) {
+    .stca-overlay { padding: 5px; }
+    .stca-panel { max-height: calc(100dvh - 10px); padding: 12px; }
+    .stca-range { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .stca-actions .menu_button { flex: 1 1 auto; }
+}

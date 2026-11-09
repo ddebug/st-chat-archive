@@ -1,0 +1,8 @@
+{
+  "name": "st-chat-archive",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Independent SillyTavern floor-range archive extension",
+  "scripts": { "check": "node --experimental-vm-modules scripts/check.mjs" }
+}

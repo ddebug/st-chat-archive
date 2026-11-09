@@ -1,0 +1,13 @@
+{
+  "display_name": "聊天存档 · 按楼层总结",
+  "author": "yona & 阿绪",
+  "version": "0.1.0",
+  "loading_order": 1,
+  "requires": [],
+  "optional": [],
+  "js": "index.js",
+  "css": "style.css",
+  "generate_interceptor": "stChatArchiveGenerationInterceptor",
+  "hooks": { "disable": "onDisable" },
+  "auto_update": false
+}
