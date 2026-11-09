@@ -32,6 +32,14 @@
 
 ## 安装
 
+在酒馆扩展的「按 URL 安装」中填写：
+
+```text
+https://github.com/ddebug/st-chat-archive
+```
+
+这是独立仓库，不需要卸载或替换小手机。安装后刷新酒馆。
+
 无需 npm 安装或构建。将本插件的文件放入独立扩展目录，根下直接包含 `manifest.json`、`index.js`、`core.js`、`style.css`，随后刷新酒馆。
 
 通常为 `data/<用户>/extensions/st-chat-archive/`；不同宿主版本路径可能不同。若从 URL 安装，需要可访问的 Git 仓库；私有仓库需要宿主能取得凭据，本插件不修改 git 认证。

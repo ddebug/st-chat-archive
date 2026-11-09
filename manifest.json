@@ -2,6 +2,7 @@
   "display_name": "聊天存档 · 按楼层总结",
   "author": "yona & 阿绪",
   "version": "0.1.0",
+  "homePage": "https://github.com/ddebug/st-chat-archive",
   "loading_order": 1,
   "requires": [],
   "optional": [],
